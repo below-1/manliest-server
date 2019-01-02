@@ -1,6 +1,11 @@
+input NewCabangParam {
+  nama: String!
+  alamat: String
+}
+
 type Cabang {
   id: Int!
-  nama: String
+  nama: String!
   alamat: String
 }
 
@@ -14,6 +19,6 @@ type Query {
 }
 
 type Mutation {
-  cabangNew(cabang: Cabang): Int
+  cabangNew(cabang: NewCabangParam): Int
   cabangDelete(id: Int): CabangDeleteResult
 }

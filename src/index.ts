@@ -1,3 +1,3 @@
 import { main } from './app';
 
-main({ port: 3000 })
+main({ port: 3000 });
