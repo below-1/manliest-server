@@ -1,0 +1,19 @@
+type Cabang {
+  id: Int!
+  nama: String
+  alamat: String
+}
+
+type CabangDeleteResult {
+  result: String
+}
+
+type Query {
+  cabang: [Cabang]!
+  cabangById(id: Int): Cabang
+}
+
+type Mutation {
+  cabangNew(cabang: Cabang): Int
+  cabangDelete(id: Int): CabangDeleteResult
+}
